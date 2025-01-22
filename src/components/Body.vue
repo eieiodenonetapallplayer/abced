@@ -260,7 +260,7 @@
               </button>
               <button
                 @click="toggleUsed"
-                class="glow-button px-4 py-2 rounded bg-white/10 hover:bg-white/20 transition-all duration-300 relative overflow-hidden group w-full sm:w-auto"
+                class="glow-button px-4 py-2 rounded bg-white/10 hover:bg-white/20 transition-all duration-300 text-white relative overflow-hidden group w-full sm:w-auto"
               >
                 <span class="relative z-10 text-white">
                   {{ used ? "Hide" : "Show" }} Tools
@@ -465,6 +465,35 @@
             </transition>
           </div>
         </div>
+        <div class="spotify-section mt-8">
+          <div
+            class="flex flex-col rounded-xl border border-white/10 p-4 backdrop-blur-sm bg-white/5"
+          >
+            <!-- Header -->
+            <div class="spotify-header text-center md:text-left">
+              <h2 class="text-xl font-semibold text-white">Spotify</h2>
+              <div
+                class="h-px bg-gradient-to-r from-transparent via-white/20 to-transparent my-2"
+              ></div>
+            </div>
+
+            <!-- Spotify Embed -->
+            <div
+              class="mt-4 transform transition-all duration-300 hover:scale-[1.01]"
+            >
+              <iframe
+                style="border-radius: 12px"
+                src="https://open.spotify.com/embed/playlist/6LvTIqcFCAiZEk0e9Wqnx1?utm_source=generator&theme=0"
+                width="100%"
+                height="152"
+                frameBorder="0"
+                allowfullscreen=""
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                loading="lazy"
+              ></iframe>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -491,7 +520,7 @@ export default {
     return {
       Name: "Coey Stepthep",
       Bio: "Hiiiiiiiiiiii~!",
-      Description: '"that just a lie..?" > Beta test',
+      Description: '"that just a lie..?"',
       role: "Software Developer",
       skills: ["Vue.js", "React", "Node.js", "Python"],
       contact: "goodplaceofficer@gmail.com",
@@ -503,30 +532,30 @@ export default {
         },
         {
           name: "Discord",
-          url: "https://discord.gg/arKAawwkDa",
+          url: "https://discord.com/users/874898422233178142",
           icon: "ri-discord-fill",
         },
         {
           name: "Email",
-          url: "https://goodplace.rexzy.xyz/",
+          url: "mailto:goodplaceofficer@gmail.com",
           icon: "ri-mail-fill",
         },
       ],
 
       images: [
         {
-          url: "https://i.postimg.cc/rph7qS7Z/1.jpg",
+          url: "../src/assets/img/custom/1.jpg",
           description: "Project 1 description",
         },
         {
-          url: "https://i.postimg.cc/TY8F22Hx/2.jpg",
+          url: "../src/assets/img/custom/2.jpg",
           description: "Project 2 description",
         },
       ],
       selectedImage: null,
 
       discordData: null,
-      discordId: "1061613918641995796", // join this -> https://discord.gg/eq8zFbBVbD
+      discordId: "874898422233178142", // join this -> https://discord.gg/eq8zFbBVbD
       loading: true,
       error: null,
       showImages: false,
@@ -558,12 +587,12 @@ export default {
       },
 
       // Payment Data
-      paypalIcon: "https://i.pinimg.com/736x/f1/d5/f7/f1d5f7d14e07f66838f5cb49aa397313.jpg",
-      paypalName: "###",
-      paypalId: "###",
-      truemoneyIcon: "https://img5.pic.in.th/file/secure-sv1/truemoney9567c51868defeed.png",
-      truemoneyNumber: "รามิล ***",
-      truemoneyName: "0979988416",
+      paypalIcon: "../src/assets/img/icon/Paypal_2014_logo.png",
+      paypalName: "VU ANH QUAN",
+      paypalId: "AAAAAA",
+      truemoneyIcon: "../src/assets/img/icon/truemoney.png",
+      truemoneyNumber: "084",
+      truemoneyName: "Etc...",
 
       // GitHub and Projects Data
       GITHUB_API_URL: "https://api.github.com/users/4levy/repos",

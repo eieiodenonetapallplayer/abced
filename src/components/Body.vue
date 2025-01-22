@@ -515,11 +515,11 @@ export default {
 
       images: [
         {
-          url: "https://img2.pic.in.th/pic/1d9e45a38376fe1a7.jpg",
+          url: "https://i.postimg.cc/rph7qS7Z/1.jpg",
           description: "Project 1 description",
         },
         {
-          url: "https://img2.pic.in.th/pic/2de230dd773524f64.jpg",
+          url: "https://i.postimg.cc/TY8F22Hx/2.jpg",
           description: "Project 2 description",
         },
       ],

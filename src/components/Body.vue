@@ -515,11 +515,11 @@ export default {
 
       images: [
         {
-          url: "../src/assets/img/custom/1.jpg",
+          url: "https://img2.pic.in.th/pic/1d9e45a38376fe1a7.jpg",
           description: "Project 1 description",
         },
         {
-          url: "../src/assets/img/custom/2.jpg",
+          url: "https://img2.pic.in.th/pic/2de230dd773524f64.jpg",
           description: "Project 2 description",
         },
       ],
@@ -558,10 +558,10 @@ export default {
       },
 
       // Payment Data
-      paypalIcon: "../src/assets/img/icon/Paypal_2014_logo.png",
+      paypalIcon: "https://img5.pic.in.th/file/secure-sv1/Paypal_2014_logo.png",
       paypalName: "Sukonthip my mom",
       paypalId: "1150",
-      truemoneyIcon: "../src/assets/img/icon/truemoney.png",
+      truemoneyIcon: "https://img5.pic.in.th/file/secure-sv1/truemoney9567c51868defeed.png",
       truemoneyNumber: "Ramil Sa...",
       truemoneyName: "191",
 

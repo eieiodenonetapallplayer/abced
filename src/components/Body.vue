@@ -558,12 +558,12 @@ export default {
       },
 
       // Payment Data
-      paypalIcon: "https://img5.pic.in.th/file/secure-sv1/Paypal_2014_logo.png",
-      paypalName: "Sukonthip my mom",
-      paypalId: "1150",
+      paypalIcon: "https://i.pinimg.com/736x/f1/d5/f7/f1d5f7d14e07f66838f5cb49aa397313.jpg",
+      paypalName: "###",
+      paypalId: "###",
       truemoneyIcon: "https://img5.pic.in.th/file/secure-sv1/truemoney9567c51868defeed.png",
-      truemoneyNumber: "Ramil Sa...",
-      truemoneyName: "191",
+      truemoneyNumber: "รามิล ***",
+      truemoneyName: "0979988416",
 
       // GitHub and Projects Data
       GITHUB_API_URL: "https://api.github.com/users/4levy/repos",

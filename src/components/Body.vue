@@ -563,7 +563,7 @@ export default {
       selectedImage: null,
 
       discordData: null,
-      discordId: "874898422233178142", // join this -> https://discord.gg/eq8zFbBVbD
+      discordId: "1061613918641995796", // join this -> https://discord.gg/eq8zFbBVbD
       loading: true,
       error: null,
       showImages: false,
@@ -595,12 +595,12 @@ export default {
       },
 
       // Payment Data
-      paypalIcon: "../src/assets/img/icon/Paypal_2014_logo.png",
-      paypalName: "VU ANH QUAN",
-      paypalId: "AAAAAA",
-      truemoneyIcon: "../src/assets/img/icon/truemoney.png",
-      truemoneyNumber: "084",
-      truemoneyName: "Etc...",
+      paypalIcon: "https://i.postimg.cc/TY8F22Hx/2.jpg",
+      paypalName: "###",
+      paypalId: "###",
+      truemoneyIcon: "https://i.postimg.cc/3rcZZLHx/truemoney.png",
+      truemoneyNumber: "รามิล ***",
+      truemoneyName: "0979988416",
 
       // GitHub and Projects Data
       GITHUB_API_URL: "https://api.github.com/users/4levy/repos",

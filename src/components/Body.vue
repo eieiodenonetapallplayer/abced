@@ -520,7 +520,7 @@ export default {
     return {
       Name: "Coey Stepthep",
       Bio: "Hiiiiiiiiiiii~!",
-      Description: '"that just a lie..?"',
+      Description: '"that just a lie..?" Beta test',
       role: "Software Developer",
       skills: ["Vue.js", "React", "Node.js", "Python"],
       contact: "goodplaceofficer@gmail.com",
@@ -532,24 +532,32 @@ export default {
         },
         {
           name: "Discord",
-          url: "https://discord.com/users/874898422233178142",
+          url: "https://discord.gg/arKAawwkDa",
           icon: "ri-discord-fill",
         },
         {
           name: "Email",
-          url: "mailto:goodplaceofficer@gmail.com",
+          url: "https://goodplace.rexzy.xyz/",
           icon: "ri-mail-fill",
         },
       ],
 
       images: [
         {
-          url: "../src/assets/img/custom/1.jpg",
+          url: "https://i.postimg.cc/Pqs3QSYw/image.png",
           description: "Project 1 description",
         },
         {
-          url: "../src/assets/img/custom/2.jpg",
+          url: "https://i.postimg.cc/hvjpt6WH/image.png",
           description: "Project 2 description",
+        },
+        {
+          url: "https://i.postimg.cc/qq5Qhwpg/image.png",
+          description: "Project 3 description",
+        },
+        {
+          url: "https://i.postimg.cc/Hsr6GqtM/image.png",
+          description: "Project 4 description",
         },
       ],
       selectedImage: null,

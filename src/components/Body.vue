@@ -491,7 +491,7 @@ export default {
     return {
       Name: "Coey Stepthep",
       Bio: "Hiiiiiiiiiiii~!",
-      Description: '"that just a lie..?"',
+      Description: '"that just a lie..?" > Beta test',
       role: "Software Developer",
       skills: ["Vue.js", "React", "Node.js", "Python"],
       contact: "goodplaceofficer@gmail.com",
@@ -503,12 +503,12 @@ export default {
         },
         {
           name: "Discord",
-          url: "https://discord.com/users/874898422233178142",
+          url: "https://discord.gg/arKAawwkDa",
           icon: "ri-discord-fill",
         },
         {
           name: "Email",
-          url: "mailto:goodplaceofficer@gmail.com",
+          url: "https://goodplace.rexzy.xyz/",
           icon: "ri-mail-fill",
         },
       ],
@@ -526,7 +526,7 @@ export default {
       selectedImage: null,
 
       discordData: null,
-      discordId: "874898422233178142", // join this -> https://discord.gg/eq8zFbBVbD
+      discordId: "1061613918641995796", // join this -> https://discord.gg/eq8zFbBVbD
       loading: true,
       error: null,
       showImages: false,
@@ -559,11 +559,11 @@ export default {
 
       // Payment Data
       paypalIcon: "../src/assets/img/icon/Paypal_2014_logo.png",
-      paypalName: "VU ANH QUAN",
-      paypalId: "AAAAAA",
+      paypalName: "Sukonthip my mom",
+      paypalId: "1150",
       truemoneyIcon: "../src/assets/img/icon/truemoney.png",
-      truemoneyNumber: "084",
-      truemoneyName: "Etc...",
+      truemoneyNumber: "Ramil Sa...",
+      truemoneyName: "191",
 
       // GitHub and Projects Data
       GITHUB_API_URL: "https://api.github.com/users/4levy/repos",

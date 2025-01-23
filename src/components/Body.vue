@@ -527,7 +527,7 @@ export default {
       socialLinks: [
         {
           name: "GitHub",
-          url: "https://github.com/4levy",
+          url: "https://github.com/eieiodenonetapallplayer",
           icon: "ri-github-fill",
         },
         {

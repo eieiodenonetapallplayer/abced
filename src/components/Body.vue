@@ -610,7 +610,7 @@ export default {
       error: null,
       repositories: [],
       allowedProjects: [
-        "Wevsite-Goodplace",
+        "Website-Goodplace",
         "Discord-RAT-2.0",
         "AllHackingTools",
         "Bot-boost",

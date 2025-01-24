@@ -603,21 +603,21 @@ export default {
       truemoneyName: "0979988416",
 
       // GitHub and Projects Data
-      GITHUB_API_URL: "https://api.github.com/users/4levy/repos",
+      GITHUB_API_URL: "https://api.github.com/users/eieiodenonetapallplayer/repos",
       showProjects: false,
       used: false,
       loading: false,
       error: null,
       repositories: [],
       allowedProjects: [
-        "Streaming-status",
-        "Custom-status",
-        "Online-VC",
-        "Executor-Key-Bypass-Discord-Bot",
+        "Wevsite-Goodplace",
+        "Discord-RAT-2.0",
+        "AllHackingTools",
+        "Bot-boost",
       ],
       tools: [
         { id: 1, name: "Discord PTB", icon: "ri-discord-line" },
-        { id: 2, name: "Visual Studio Code", icon: "ri-visual-studio-line" },
+        { id: 2, name: "Visual Studio Code", icon: "ri-window-line" }, 
         { id: 3, name: "Visual Studio", icon: "ri-window-line" },
         { id: 4, name: "Firefox Nightly", icon: "ri-firefox-line" },
       ],

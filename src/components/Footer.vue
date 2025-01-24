@@ -46,7 +46,7 @@ onMounted(async () => {
         <p class="mb-1">{{ currentTime }}</p>
       </div>
       <div class="text-center md:text-right text-sm text-catppuccin-gray">
-        <p>&copy; {{ currentYear }} 4levy. All rights reserved.</p>
+        <p>&copy; {{ currentYear }} CoeyStepthep. All rights reserved.</p>
       </div>
     </div>
   </div>

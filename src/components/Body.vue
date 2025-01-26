@@ -568,11 +568,6 @@ export default {
           url: "https://www.instagram.com/eieioden/",
           icon: "ri-instagram-fill",
         },
-        {
-          name: "Line",
-          url: "http://line.me/ti/p",
-          icon: "ri-line-fill",
-        },
       ],
 
       images: [

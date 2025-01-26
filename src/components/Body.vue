@@ -288,32 +288,9 @@
               </button>
               <div class="flex flex-wrap gap-4 mt-4 justify-center md:justify-start">
             <button
-              @click="toggleShowDreams"
-              class="glow-button px-4 py-2 rounded bg-white/10 hover:bg-white/20 transition-all duration-300 relative overflow-hidden group w-full sm:w-auto"
-            > 
-              <span class="relative z-10 text-white">     
-                {{ showDreams ? "Hide" : "Show" }} Dreams
-              </span>
-              <div class="glow-effect"></div>
-              </button>
             </div>
             </div>
-            
-             <transition
-  name="fade"
-  enter-active-class="transition ease-out duration-300"
-  enter-from-class="transform opacity-0 scale-95"
-  enter-to-class="transform opacity-100 scale-100"
-  leave-active-class="transition ease-in duration-200"
-  leave-from-class="transform opacity-100 scale-100"
-  leave-to-class="transform opacity-0 scale-95"
->
-  <div v-if="showDreams" class="mt-4 p-4 rounded-xl bg-white/5 border border-white/10">
-    <p class="text-white">
-      My dream is to become a skilled software developer, to create meaningful and innovative solutions that positively impact people's lives.
-    </p>
-  </div>
-</transition>
+          
             <transition
               name="fade"
               enter-active-class="transition ease-out duration-300"

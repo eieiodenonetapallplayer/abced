@@ -544,19 +544,19 @@ export default {
 
       images: [
         {
-          url: "https://i.postimg.cc/Pqs3QSYw/image.png",
+          url: "https://i.postimg.cc/1RgCYYCq/split-0-0.png",
           description: "Project 1 description",
         },
         {
-          url: "https://i.postimg.cc/hvjpt6WH/image.png",
+          url: "https://i.postimg.cc/8kqK8B9n/split-1-0.png",
           description: "Project 2 description",
         },
         {
-          url: "https://i.postimg.cc/qq5Qhwpg/image.png",
+          url: "https://i.postimg.cc/ncBdn9tV/split-0-1.png",
           description: "Project 3 description",
         },
         {
-          url: "https://i.postimg.cc/Hsr6GqtM/image.png",
+          url: "https://i.postimg.cc/qvGj3fR9/split-1-1.png",
           description: "Project 4 description",
         },
       ],

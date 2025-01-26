@@ -483,7 +483,7 @@
             >
               <iframe
                 style="border-radius: 12px"
-                src="https://open.spotify.com/embed/playlist/0tQKoL395qAwiOk1ZbqhTb?utm_source=generator"
+                src="https://open.spotify.com/embed/playlist/0tQKoL395qAwiOk1ZbqhTb?utm_source=generator&theme=0"
                 width="100%"
                 height="152"
                 frameBorder="0"

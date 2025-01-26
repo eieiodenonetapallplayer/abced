@@ -1,3 +1,4 @@
+
 <template>
   <div class="min-h-screen flex items-center justify-center p-4">
     <!-- Main Card -->
@@ -285,9 +286,31 @@
                 </span>
                 <div class="glow-effect"></div>
               </button>
+              <div class="flex flex-wrap gap-4 mt-4 justify-center md:justify-start">
+            <button
+              @click="toggleShowDreams"
+              class="glow-button px-4 py-2 rounded bg-white/10 hover:bg-white/20"
+            >      
+              {{ showDreams ? "Hide" : "Show" }} Dreams
+              </button>
             </div>
-
-
+            </div>
+            
+             <transition
+  name="fade"
+  enter-active-class="transition ease-out duration-300"
+  enter-from-class="transform opacity-0 scale-95"
+  enter-to-class="transform opacity-100 scale-100"
+  leave-active-class="transition ease-in duration-200"
+  leave-from-class="transform opacity-100 scale-100"
+  leave-to-class="transform opacity-0 scale-95"
+>
+  <div v-if="showDreams" class="mt-4 p-4 rounded-xl bg-white/5 border border-white/10">
+    <p class="text-white">
+      My dream is to become a skilled software developer, to create meaningful and innovative solutions that positively impact people's lives.
+    </p>
+  </div>
+</transition>
             <transition
               name="fade"
               enter-active-class="transition ease-out duration-300"
@@ -483,7 +506,7 @@
             >
               <iframe
                 style="border-radius: 12px"
-                src="https://open.spotify.com/embed/playlist/0tQKoL395qAwiOk1ZbqhTb?utm_source=generator&theme=0"
+                src="https://open.spotify.com/embed/playlist/0tQKoL395qAwiOk1ZbqhTb?utm_source=generator"
                 width="100%"
                 height="152"
                 frameBorder="0"
@@ -520,7 +543,7 @@ export default {
     return {
       Name: "Coey Stepthep",
       Bio: "Hiiiiiiiiiiii~!",
-      Description: '"that just a lie..?" Beta test',
+      Description: '"that just a lie..?" Beta test Hello my name is J',
       role: "Software Developer",
       skills: ["Vue.js", "React", "Node.js", "Python"],
       contact: "goodplaceofficer@gmail.com",
@@ -539,6 +562,16 @@ export default {
           name: "Email",
           url: "https://goodplace.rexzy.xyz/",
           icon: "ri-mail-fill",
+        },
+        {
+          name: "Instagram",
+          url: "https://www.instagram.com/eieioden/",
+          icon: "ri-instagram-fill",
+        },
+        {
+          name: "Line",
+          url: "http://line.me/ti/p",
+          icon: "ri-line-fill",
         },
       ],
 
@@ -617,9 +650,12 @@ export default {
       ],
       tools: [
         { id: 1, name: "Discord PTB", icon: "ri-discord-line" },
-        { id: 2, name: "Visual Studio Code", icon: "ri-window-line" }, 
-        { id: 3, name: "Visual Studio", icon: "ri-window-line" },
+        { id: 2, name: "Visual Studio Code", icon: "ri-code-line" }, 
+        { id: 3, name: "JetBrains IntelliJ IDEA", icon: "ri-window-line" },
         { id: 4, name: "Firefox Nightly", icon: "ri-firefox-line" },
+        { id: 5, name: "JetBrains IntelliJ IDEA", icon: "ri-tools-line" },
+        { id: 6, name: "Vim", icon: "ri-tools-line" },
+        { id: 7, name: "Atom", icon: "ri-tools-line" },
       ],
 
       // Toast Notification
@@ -1274,4 +1310,14 @@ body {
     filter: drop-shadow(0 0 8px currentColor);
   }
 }
+.glow-button {
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.glow-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 10px rgba(147, 51, 246, 0.5);
+}
+
 </style>

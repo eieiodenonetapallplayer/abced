@@ -289,9 +289,12 @@
               <div class="flex flex-wrap gap-4 mt-4 justify-center md:justify-start">
             <button
               @click="toggleShowDreams"
-              class="glow-button px-4 py-2 rounded bg-white/10 hover:bg-white/20"
-            >      
-              {{ showDreams ? "Hide" : "Show" }} Dreams
+              class="glow-button px-4 py-2 rounded bg-white/10 hover:bg-white/20 transition-all duration-300 relative overflow-hidden group w-full sm:w-auto"
+            > 
+              <span class="relative z-10 text-white">     
+                {{ showDreams ? "Hide" : "Show" }} Dreams
+              </span>
+              <div class="glow-effect"></div>
               </button>
             </div>
             </div>

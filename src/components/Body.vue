@@ -1,4 +1,3 @@
-
 <template>
   <div class="min-h-screen flex items-center justify-center p-4">
     <!-- Main Card -->
@@ -286,11 +285,9 @@
                 </span>
                 <div class="glow-effect"></div>
               </button>
-              <div class="flex flex-wrap gap-4 mt-4 justify-center md:justify-start">
-            <button
             </div>
-            </div>
-          
+
+
             <transition
               name="fade"
               enter-active-class="transition ease-out duration-300"
@@ -523,14 +520,14 @@ export default {
     return {
       Name: "Coey Stepthep",
       Bio: "Hiiiiiiiiiiii~!",
-      Description: '"that just a lie..?" Beta test Hello my name is J',
+      Description: '"that just a lie..?"',
       role: "Software Developer",
       skills: ["Vue.js", "React", "Node.js", "Python"],
       contact: "goodplaceofficer@gmail.com",
       socialLinks: [
         {
           name: "GitHub",
-          url: "https://github.com/eieiodenonetapallplayer",
+          url: "https://github.com/eieiodenonetapallplayer/",
           icon: "ri-github-fill",
         },
         {
@@ -540,7 +537,7 @@ export default {
         },
         {
           name: "Email",
-          url: "https://goodplace.rexzy.xyz/",
+          url: "mailto:goodplaceofficer@gmail.com",
           icon: "ri-mail-fill",
         },
         {
@@ -612,8 +609,8 @@ export default {
       paypalName: "###",
       paypalId: "###",
       truemoneyIcon: "https://i.postimg.cc/3rcZZLHx/truemoney.png",
-      truemoneyNumber: "รามิล ***",
-      truemoneyName: "0979988416",
+      truemoneyNumber: "0979988416",
+      truemoneyName: "รามิล ส...",
 
       // GitHub and Projects Data
       GITHUB_API_URL: "https://api.github.com/users/eieiodenonetapallplayer/repos",
@@ -633,9 +630,8 @@ export default {
         { id: 2, name: "Visual Studio Code", icon: "ri-code-line" }, 
         { id: 3, name: "JetBrains IntelliJ IDEA", icon: "ri-window-line" },
         { id: 4, name: "Firefox Nightly", icon: "ri-firefox-line" },
-        { id: 5, name: "JetBrains IntelliJ IDEA", icon: "ri-tools-line" },
-        { id: 6, name: "Vim", icon: "ri-tools-line" },
-        { id: 7, name: "Atom", icon: "ri-tools-line" },
+        { id: 5, name: "Vim", icon: "ri-tools-line" },
+        { id: 6, name: "Atom", icon: "ri-tools-line" },
       ],
 
       // Toast Notification
@@ -1290,14 +1286,4 @@ body {
     filter: drop-shadow(0 0 8px currentColor);
   }
 }
-.glow-button {
-  position: relative;
-  transition: all 0.3s ease;
-}
-
-.glow-button:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 0 10px rgba(147, 51, 246, 0.5);
-}
-
 </style>

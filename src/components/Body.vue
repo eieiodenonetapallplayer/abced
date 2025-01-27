@@ -607,7 +607,7 @@ export default {
       // Payment Data
       paypalIcon: "https://i.postimg.cc/nLynnzB2/image.png",
       paypalName: "1KfVZ...",
-      paypalId: "bc1qw508d6qejxtdg4y5r3zarvary0c5xw7kygt080",
+      paypalId: "bc1qw508d..",
       truemoneyIcon: "https://i.postimg.cc/3rcZZLHx/truemoney.png",
       truemoneyNumber: "0979988416",
       truemoneyName: "รามิล ส...",

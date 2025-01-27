@@ -258,16 +258,15 @@
                 </span>
                 <div class="glow-effect"></div>
               </button>
-<button
-  @click="toggleUsed"
-  class="glow-button px-4 py-2 rounded bg-white/10 hover:bg-white/20 transition-all duration-300 text-white relative overflow-hidden group w-full sm:w-auto text-sm md:text-base truncate"
->
-  <span class="relative z-10 text-white">
-    {{ used ? "Hide" : "Show" }} Tools
-  </span>
-  <div class="glow-effect"></div>
-</button>
-
+              <button
+                @click="toggleUsed"
+                class="glow-button px-4 py-2 rounded bg-white/10 hover:bg-white/20 transition-all duration-300 text-white relative overflow-hidden group w-full sm:w-auto"
+              >
+                <span class="relative z-10 text-white">
+                  {{ used ? "Hide" : "Show" }} Tools
+                </span>
+                <div class="glow-effect"></div>
+              </button>
               <button
                 @click="toggleImages"
                 class="glow-button px-4 py-2 rounded bg-white/10 hover:bg-white/20 transition-all duration-300 relative overflow-hidden group w-full sm:w-auto"
@@ -632,7 +631,7 @@ export default {
         { id: 3, name: "JetBrains IntelliJ IDEA", icon: "ri-window-line" },
         { id: 4, name: "Firefox Nightly", icon: "ri-firefox-line" },
         { id: 5, name: "Vim", icon: "ri-tools-line" },
-        { id: 6, name: "Atom", icon: "ri-tools-line" },
+        { id: , name: "Atom", icon: "ri-tools-line" },
       ],
 
       // Toast Notification

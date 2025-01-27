@@ -258,15 +258,16 @@
                 </span>
                 <div class="glow-effect"></div>
               </button>
-              <button
-                @click="toggleUsed"
-                class="glow-button px-4 py-2 rounded bg-white/10 hover:bg-white/20 transition-all duration-300 text-white relative overflow-hidden group w-full sm:w-auto"
-              >
-                <span class="relative z-10 text-white">
-                  {{ used ? "Hide" : "Show" }} Tools
-                </span>
-                <div class="glow-effect"></div>
-              </button>
+<button
+  @click="toggleUsed"
+  class="glow-button px-4 py-2 rounded bg-white/10 hover:bg-white/20 transition-all duration-300 text-white relative overflow-hidden group w-full sm:w-auto text-sm md:text-base truncate"
+>
+  <span class="relative z-10 text-white">
+    {{ used ? "Hide" : "Show" }} Tools
+  </span>
+  <div class="glow-effect"></div>
+</button>
+
               <button
                 @click="toggleImages"
                 class="glow-button px-4 py-2 rounded bg-white/10 hover:bg-white/20 transition-all duration-300 relative overflow-hidden group w-full sm:w-auto"

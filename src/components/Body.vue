@@ -611,6 +611,9 @@ export default {
       truemoneyIcon: "https://i.postimg.cc/3rcZZLHx/truemoney.png",
       truemoneyNumber: "0979988416",
       truemoneyName: "รามิล ส...",
+      bitcoinIcon: "https://i.postimg.cc/nLynnzB2/image.png",
+      bitcoinNumber: "bc1qw508d6qejxtdg4y5r3zarvary0c5xw7kygt080",
+      bitcoinName: "รามิล ส...",
 
       // GitHub and Projects Data
       GITHUB_API_URL: "https://api.github.com/users/eieiodenonetapallplayer/repos",

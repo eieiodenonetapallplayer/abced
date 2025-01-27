@@ -627,11 +627,9 @@ export default {
       ],
       tools: [
         { id: 1, name: "Discord PTB", icon: "ri-discord-line" },
-        { id: 2, name: "Visual Studio Code", icon: "ri-code-line" }, 
-        { id: 3, name: "JetBrains IntelliJ IDEA", icon: "ri-window-line" },
+        { id: 2, name: "Visual Studio Code", icon: "ri-code-line" },
+        { id: 3, name: "Atom / Vim", icon: "ri-window-line" },
         { id: 4, name: "Firefox Nightly", icon: "ri-firefox-line" },
-        { id: 5, name: "Vim", icon: "ri-tools-line" },
-        { id: , name: "Atom", icon: "ri-tools-line" },
       ],
 
       // Toast Notification

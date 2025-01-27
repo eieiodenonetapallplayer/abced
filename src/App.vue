@@ -1,4 +1,23 @@
 <template>
+  <!-- Loading Screen -->
+  <div 
+    v-if="isLoading" 
+    class="fixed inset-0 z-50 flex items-center justify-center bg-black/50 backdrop-blur-md transition-all duration-500"
+  >
+    <div class="text-center">
+          <circle 
+            class="opacity-25" 
+            cx="12" 
+            cy="12" 
+            r="10" 
+            stroke="currentColor" 
+            stroke-width="4"
+          />
+      </div>
+      <div class="text-white text-xl font-bold loading-text">
+        Loading... {{ loadingProgress }}%
+      </div>
+    </div>
   <!-- Main Content -->
   <main
     :class="{ 'page-blur': !isTabActive }"
@@ -105,6 +124,9 @@ export default {
       isClicking: false,
       isLinkHover: false,
       isTabActive: true,
+      isLoading: true,
+      loadingProgress: 0,
+      loadingInterval: null,
       clickTexts: [],
       randomTexts: [
         "????",
@@ -137,6 +159,7 @@ export default {
     window.addEventListener("mouseup", () => (this.isClicking = false));
     window.addEventListener("click", this.spawnClickText);
     window.addEventListener("scroll", this.handleScroll);
+    this.startLoading();
 
     document.addEventListener("keydown", (e) => {
       if (
@@ -172,6 +195,9 @@ export default {
       "visibilitychange",
       this.handleVisibilityChange
     );
+    if (this.loadingInterval) {
+      clearInterval(this.loadingInterval);
+    }
     window.removeEventListener("scroll", this.handleScroll);
 
     document.querySelectorAll("a, button").forEach((el) => {
@@ -206,6 +232,39 @@ export default {
       }));
       this.lastScrollY = this.scrollY;
     },
+
+    // Add these new methods
+    startLoading() {
+      this.loadingProgress = 0;
+      this.isLoading = true;
+      
+      this.loadingInterval = setInterval(() => {
+        if (this.loadingProgress < 100) {
+          this.loadingProgress += Math.floor(Math.random() * 10) + 1;
+          if (this.loadingProgress > 100) {
+            this.loadingProgress = 100;
+          }
+        } else {
+          clearInterval(this.loadingInterval);
+          this.finishLoading();
+        }
+      }, 200);
+
+      setTimeout(() => {
+        if (this.loadingProgress < 100) {
+          this.loadingProgress = 100;
+          this.finishLoading();
+        }
+      }, 3000);
+    },
+
+    finishLoading() {
+      this.isLoading = false;
+      if (this.loadingInterval) {
+        clearInterval(this.loadingInterval);
+      }
+    },
+
     spawnClickText(event) {
       const text = this.randomTexts[Math.floor(Math.random() * this.randomTexts.length)]
       const randomColor = Math.floor(Math.random() * this.textColors.length)
@@ -235,6 +294,28 @@ export default {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  -ms-overflow-style: none;  
+  scrollbar-width: none;  
+}
+
+*::-webkit-scrollbar {
+  display: none;
+  width: 0;
+  background: transparent;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-y: scroll;
+  scrollbar-width: none; 
+  -ms-overflow-style: none;
+}
+
+body {
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 
 .trail-star {
@@ -319,6 +400,22 @@ export default {
 main {
   transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
   will-change: transform, opacity, filter;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+#app {
+  overflow: hidden;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+#app::-webkit-scrollbar {
+  display: none;
+  width: 0;
+  background: transparent;
 }
 
 .page-blur {
@@ -383,6 +480,31 @@ main {
   transform: translate(-50%, -50%);
   color: white;
   font-size: 1.5rem;
+}
+
+.loading-text {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  background: linear-gradient(
+    to right,
+    rgb(147, 51, 234),
+    rgb(236, 72, 153),
+    rgb(59, 130, 246)
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  background-size: 200% auto;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: .7;
+    transform: scale(0.95);
+  }
 }
 
 @keyframes textGlow {

@@ -23,7 +23,7 @@
           </svg>
         </span>
         <span class="magic-text group-hover:animate-text-shimmer"
-          >COEYEE \ Home</span
+          >COEYONETAP \ Home</span
         >
       </span>
     </h1>

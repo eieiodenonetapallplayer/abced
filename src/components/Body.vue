@@ -79,6 +79,70 @@
               </div>
             </div>
           </div>
+
+          <div class="w-full" :class="{ 'cursor-pointer': true }">
+            <!-- Clickable Header -->
+            <div
+              @click="isOpen = !isOpen"
+              class="flex items-center justify-between p-4 rounded-lg bg-gray-800/50 backdrop-blur-sm border border-white/10"
+            >
+              <!-- Left side with logo and name -->
+              <div class="flex items-center gap-3">
+                <div
+                  class="w-8 h-8 rounded-full bg-blue-600 flex items-center justify-center"
+                >
+                  <span class="text-white text-sm">L?</span>
+                </div>
+                <span class="text-white">Globlex Securities Co.Ltd</span>
+              </div>
+
+              <!-- Chevron icon -->
+              <svg
+                class="w-5 h-5 text-gray-400 transition-transform duration-200"
+                :class="{ 'rotate-180': isOpen }"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7"
+                />
+              </svg>
+            </div>
+
+            <!-- Dropdown Content -->
+            <transition
+              enter-active-class="transition duration-100 ease-out"
+              enter-from-class="transform scale-95 opacity-0"
+              enter-to-class="transform scale-100 opacity-100"
+              leave-active-class="transition duration-75 ease-in"
+              leave-from-class="transform scale-100 opacity-100"
+              leave-to-class="transform scale-95 opacity-0"
+            >
+              <div
+                v-show="isOpen"
+                class="mt-2 p-4 rounded-lg bg-gray-800/50 backdrop-blur-sm border border-white/10"
+              >
+                <div class="flex flex-col space-y-2">
+                  <!-- Add your dropdown content here -->
+                  <a
+                    v-for="social in socialLinks"
+                    :key="social.name"
+                    :href="social.url"
+                    class="text-gray-300 hover:text-white flex items-center gap-2 p-2 rounded hover:bg-gray-700/50"
+                  >
+                    <i :class="social.icon"></i>
+                    <span>{{ social.name }}</span>
+                  </a>
+                </div>
+              </div>
+            </transition>
+          </div>
+
+          <br />
           <hr />
           <br />
 
@@ -286,7 +350,6 @@
                 <div class="glow-effect"></div>
               </button>
             </div>
-
 
             <transition
               name="fade"
@@ -524,6 +587,8 @@ export default {
       role: "Software Developer",
       skills: ["Vue.js", "React", "Node.js", "Python"],
       contact: "goodplaceofficer@gmail.com",
+
+      isOpen: false,
       socialLinks: [
         {
           name: "GitHub",
@@ -536,7 +601,7 @@ export default {
           icon: "ri-discord-fill",
         },
         {
-          name: "Email",
+          name: "Website",
           url: "mailto:goodplaceofficer@gmail.com",
           icon: "ri-mail-fill",
         },
@@ -613,7 +678,8 @@ export default {
       truemoneyName: "รามิล ส...",
 
       // GitHub and Projects Data
-      GITHUB_API_URL: "https://api.github.com/users/eieiodenonetapallplayer/repos",
+      GITHUB_API_URL:
+        "https://api.github.com/users/eieiodenonetapallplayer/repos",
       showProjects: false,
       used: false,
       loading: false,
@@ -716,6 +782,9 @@ export default {
   },
 
   methods: {
+    toggleDropdown() {
+      this.isOpen = !this.isOpen;
+    },
     // GitHub Methods
     async fetchGithubRepos() {
       this.loading = true;
@@ -945,6 +1014,10 @@ body {
   transition: opacity 0.3s ease;
 }
 
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.2s;
+}
 .fade-enter-from,
 .fade-leave-to {
   opacity: 0;
@@ -1003,6 +1076,10 @@ body {
     opacity: 1;
     box-shadow: 0 0 20px rgba(147, 51, 234, 0.5);
   }
+}
+
+.rotate-90 {
+  transform: rotate(90deg);
 }
 
 /* Payment Cards */

@@ -601,8 +601,8 @@ export default {
           icon: "ri-discord-fill",
         },
         {
-          name: "Website",
-          url: "mailto:goodplaceofficer@gmail.com",
+          name: "Website Store",
+          url: "https://goodplace.rexzy.xyz/",
           icon: "ri-mail-fill",
         },
         {

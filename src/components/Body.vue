@@ -690,6 +690,12 @@ export default {
         "Discord-RAT-2.0",
         "AllHackingTools",
         "Bot-boost",
+        "discord-api-typescript",
+        "discord-username-scraper",
+        "Multi-tool-",
+        "DiscordBot-RandomGif",
+        "instagram-scraper",
+        "Verificador-URL",
       ],
       tools: [
         { id: 1, name: "Discord PTB", icon: "ri-discord-line" },

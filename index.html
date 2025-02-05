@@ -1,50 +1,82 @@
-﻿<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="th">
   <head>
     <link rel="shortcut icon" href="https://i.postimg.cc/3xtrWkb2/b5d0e03b0a0c417621b8a8ff1e0bb888.jpg" type="image/x-icon">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="This is John's profile.">
-    <meta name="keywords" content="This is John's profile.">
-    <meta name="author" content="COEYY">
+    <meta name="description" content="Website carrent nomberone..">
+    <meta name="keywords" content="Carrent Mr.Pond onthetop">
+    <meta name="author" content="Ramil / Mr.John">
     <meta name="url" content="https://www.coeyeternal.site/">
     <meta name="identifier-URL" content="https://www.coeyeternal.site/">
-    <meta name="twitter:title" content="This is John's profile.">
-    <meta name="twitter:description" content="Hii guy">
-    <meta name="twitter:image" content="https://i.postimg.cc/Y0B31X8D/image.png">
-    <meta name="twitter:card" content="https://i.postimg.cc/Y0B31X8D/image.png">
-    <meta property="og:title" content="This is John's profile.">
-    <meta property="og:description" content="Hii guy">
-    <meta property="og:image" content="https://i.postimg.cc/Y0B31X8D/image.png" />
-    <meta property="og:url" content="https://www.coeyeternal.site/">
-    <meta property="og:site_name" content="hii">
+    <meta name="twitter:title" content="Carrent Mr.Pond onthetop">
+    <meta name="twitter:description" content="Website carrent nomberone.">
+    <meta name="twitter:image" content="./public/Screenshot.png">
+    <meta name="twitter:card" content="./public/Screenshot.png">
+    <meta property="og:title" content="Carrent Mr.Pond onthetop">
+    <meta property="og:description" content="Website carrent nomberone..">
+    <meta property="og:image" content="./public/Screenshot.png" />
+    <meta property="og:url" content="coeyeternal.site ">
+    <meta property="og:site_name" content="Carrent Mr.Pond onthetop">
     <meta property="og:type" content="website">
   </head>
+
   <body>
       <div id="app"></div>
       <script type="module" src="/src/loadmeeeeeeeee.js"></script>
     </body>
+
 <script>
-let titles = [
-"COEYEE / Home", 
-"One last time", 
-"Skill Issue", 
-"luvunajaa", 
-"Software Developer", 
-"Vue", 
-    ]; 
-    let index = 0;
+const titles = [
+    "| Ramil_Mr.Jhon / Home",
+    "| Butterflies",
+    "| Skill Issue", 
+    "| by my side",
+    "| Vue.js",
+    "| On My Mind"
+];
 
-    function changeTitle() {
-        document.title = titles[index];
+const config = {
+    interval: 2000,
+    randomOrder: true,
+    fadeEffect: true
+};
 
-        index = (index + 1) % titles.length;
+let currentIndex = 0;
+let previousTitle = document.title;
 
-        setTimeout(changeTitle, 2000);
+function NextIndex() {
+    if (config.randomOrder) {
+        return Math.floor(Math.random() * titles.length);
     }
-    window.onload = changeTitle;
+    return (currentIndex + 1) % titles.length;
+}
+
+function updateTitle() {
+    try {
+        if (config.fadeEffect) {
+            document.title = "";
+            setTimeout(() => {
+                currentIndex = NextIndex();
+                document.title = titles[currentIndex];
+            }, 100);
+        } else {
+            currentIndex = NextIndex();
+            document.title = titles[currentIndex];
+        }
+
+        setTimeout(updateTitle, config.interval);
+    } catch (error) {
+        console.error("Error updating title:", error);
+        document.title = previousTitle; 
+    }
+}
+
+window.addEventListener('load', updateTitle);
 </script>
+
 </body>
 </html>

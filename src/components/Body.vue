@@ -611,9 +611,9 @@ export default {
           icon: "ri-instagram-fill",
         },
         {
-          name: "Line",
-          url: "http://line.me/ti/p",
-          icon: "ri-line-fill",
+          name: "Carseent",
+          url: "https://carsrent-beta.vercel.app/",
+          icon: "ri-code-fill",
         },
       ],
 

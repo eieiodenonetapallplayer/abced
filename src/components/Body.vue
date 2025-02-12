@@ -583,7 +583,7 @@ export default {
     return {
       Name: "Coey Stepthep",
       Bio: "Hiiiiiiiiiiii~!",
-      Description: 'My name is John',
+      Description: 'My name's John',
       role: "Software Developer",
       skills: ["Vue.js", "React", "Node.js", "Python"],
       contact: "goodplaceofficer@gmail.com",

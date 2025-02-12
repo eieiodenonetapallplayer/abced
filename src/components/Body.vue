@@ -601,18 +601,23 @@ export default {
           icon: "ri-discord-fill",
         },
         {
-          name: "Website Store",
-          url: "https://goodplace.rexzy.xyz/",
-          icon: "ri-mail-fill",
-        },
-        {
           name: "Instagram",
           url: "https://www.instagram.com/eieioden/",
           icon: "ri-instagram-fill",
         },
         {
-          name: "Carseent",
+          name: "Website Store",
+          url: "https://goodplace.rexzy.xyz/",
+          icon: "ri-code-fill",
+        },
+        {
+          name: "Carrent",
           url: "https://carsrent-beta.vercel.app/",
+          icon: "ri-code-fill",
+        },
+        {
+          name: "-Broker-",
+          url: "https://www.globlex.co.th/",
           icon: "ri-code-fill",
         },
       ],

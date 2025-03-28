@@ -596,16 +596,6 @@ export default {
           icon: "ri-github-fill",
         },
         {
-          name: "Discord",
-          url: "https://discord.gg/arKAawwkDa",
-          icon: "ri-discord-fill",
-        },
-        {
-          name: "Instagram",
-          url: "https://www.instagram.com/eieioden/",
-          icon: "ri-instagram-fill",
-        },
-        {
           name: "Website Store",
           url: "https://goodplace.rexzy.xyz/",
           icon: "ri-code-fill",
@@ -616,7 +606,7 @@ export default {
           icon: "ri-code-fill",
         },
         {
-          name: "-Broker-",
+          name: "Broker",
           url: "https://www.globlex.co.th/",
           icon: "ri-code-fill",
         },
